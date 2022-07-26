@@ -82,6 +82,16 @@ hr {
     }
 } */
 
+@media screen and (max-width:1700px) and (min-width:1030px){
+    img{
+        margin-top: 250px;
+    }
+    header {
+        margin-right: 30px;
+    }
+    
+}
+
 @media screen and (min-width: 1030px){
     .content-area {
         display: flex;
