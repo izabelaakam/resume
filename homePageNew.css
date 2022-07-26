@@ -1,0 +1,182 @@
+html {
+    background-color: #FFF;
+}
+
+body{
+    /* font-family: Tahoma, sans-serif; */
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    margin: 0;
+    font-size: 30px;
+}
+
+header {
+    line-height: 1.2;
+}
+
+header h1 {
+    margin-top: 150px;
+    font-size: 70px;
+    margin-bottom: 0;
+    
+}
+
+header p {
+    margin-top: 0;
+}
+
+.contact-text {
+    padding-top: 80px;
+    margin-bottom: 0;
+}
+
+
+/*Contact links*/
+.contact-links {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.contact-links a {
+    color: black;
+}
+
+.contact-links a:hover {
+    /* color: #8EA69C; */
+    color: rgb(241, 214, 0);
+}
+
+.contact-links ul{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-links li {
+    list-style:none;
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/*Contact links*/
+img {
+    max-width: 50%;
+    margin-top: 180px;
+    margin-bottom: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.container-left {
+    flex: 1;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.container-right {
+    /* background-color: #8EA69C; */
+    background-color: rgb(241, 214, 0);
+    flex: 1;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/*RWD*/
+
+@media screen and (max-width:1700px) and (min-width:1030px){
+    img{
+        margin-top: 250px;
+    }
+    header {
+        margin-right: 30px;
+    }
+    
+}
+
+@media screen and (min-width: 1030px){
+    .content-area {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    header h1 {
+        margin-top: 70px;
+        font-size: 50px;
+    }
+        
+}
+
+/*end of RWD*/
+
+/*navi*/
+
+.site-nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+    width: 98%;
+    border-bottom-width: 2px;
+    /* border-bottom-style: dotted; */
+    border-bottom-width:0.15em;
+    font-size: 25px;
+}
+
+.site-nav ul {
+    margin-right: 30px;
+}
+
+.site-nav li {
+    list-style:none;
+    float: left;
+    text-align: center;
+}
+
+.site-nav a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+    box-sizing: border-box;
+    overflow: visible;
+    width: 60px;
+    height: 40px;
+} 
+
+
+.site-nav a:hover {
+    /* color: #8EA69C; */
+    color: rgb(241, 214, 0);
+} 
+
+/*end navi*/
+
+.group::before,
+.group::after {
+    content: "";
+    display: table;
+}
+
+.group::after {
+    clear:both
+}
+
+.group {
+    zoom: 1;
+}
